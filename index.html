@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full Stack Web Developer | Connor Scoma Portfolio Site</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <meta name="theme-color" content="#06ff00" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" href="img/title_logo.png">
+    <meta property="og:image" content="img/preview_img.png">
+    <meta property="og:url" content="http://connorscoma.me/">
+    <meta property="og:description" content="I am a Full Stack Web Developer and an entrepreneur. Studied Web Development at the University of Wisconsin Colleges. Feel free to take a look at my latest projects on my portfolio page. "/>
+  </head>
+  <body>
+
+<!--header And navigation 
+----------------------------------------------------------------------------------------------------------------------------->
+    <header>
+      <img src="img/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+
+<!--Heading Homepage Content 
+----------------------------------------------------------------------------------------------------------------------------->
+    <section class="home-hero">
+      <div class="container">
+        <!--<h1 class="title">Hi, Im Connor Scoma. 
+          <span>Welcome to my Portfolio Site ;)</span>-->
+            <div class="title" id="str"></div>
+              <br>
+              <span id="strg"></span>
+
+
+          <div class="chickennoodel"></div>
+        </h1>
+          <a href="resume.docx" class="button button-accent" download>View My Resume!</a>
+          <div id="about"></div>
+    </section>
+  </div>
+
+
+<script>
+  var string = "Hello, I'm Connor Scoma, Welcome to my Portfolio Site";
+  var str = string.split("");
+  var el = document.getElementById('str');
+    
+    (function animate() {
+      str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
+      var running = setTimeout(animate, 90);
+  })
+    ();  
+
+
+</script>
+
+
+
+<!--Page 2 Content 
+----------------------------------------------------------------------------------------------------------------------------->
+<section class="home-about">
+  <div class="container">
+
+      <div class="home-about-textbox">
+        <h1>About</h1>
+
+        <p>Hello, my name is Connor Scoma.</p>
+
+        <p>I am a Full Stack Web Developer and an entrepreneur.</p>
+
+        <p>Studied Web Development at the University of Wisconsin Colleges.</p>
+
+        <p>Feel free to take a look at my latest projects on my portfolio page.</p>
+
+        <p>The best form of contacting me is on the contact page.</p>
+
+
+      </div>
+  </section>
+</div>
+
+<div id="portfolio"></div>
+<br>
+<br>
+<br>
+<hr>
+
+
+<!--Page 3 Content/ Portfolio
+----------------------------------------------------------------------------------------------------------------------------->
+<h1 class="menu-options">Portfolio</h1>
+
+<div class="container3">
+  <div class="row">
+    <div class="column">
+      <a href="https://connorscoma1.github.io/"><img src="img/img_1.png" style="width: 100%;"></a>
+    </div>
+
+    <div class="column">
+      <a href="https://connorscoma1.github.io/jsport/"><img src="img/img_2.png" style="width: 100%;"></a>
+    </div>
+  </div>
+  
+
+  <div class="row">
+    <div class="column">
+      <a href="https://connorscoma1.github.io/port1/"><img src="img/img_3.png" style="width: 100%;"></a>
+    </div>
+    
+    <div class="column">
+      <a href="https://cps139-1.uwc.edu/SCOMC3808/unit6/unit6.htm"><img src="img/img_4.png" style="width: 100%;"></a>
+    </div>
+
+</div>
+</div>
+
+<div id="contact"></div>
+
+<br>
+<hr>
+
+
+<!--Form page contact.me 
+----------------------------------------------------------------------------------------------------------------------------->
+<h1 class="menu-options">Contact</h1>
+        <section class="rsvp" id="rsvp">
+      <div class="contact-box">
+        <form action="https://formspree.io/connorscoma@gmail.com" method="POST">
+          <ul id="fieldList" style="list-style-type: none;">
+            <li style="list-style-type: none;">
+              <input class="user-input" name="firstName[]" type="text" placeholder="First Name" />
+            </li>
+
+            <li style="list-style-type: none;">
+              <input class="user-input" name="email[]" type="text" placeholder="Email" />
+            </li>
+
+            <li style="list-style-type: none;">
+              <input class="user-input" name="subject[]" type="text" placeholder="subject" />
+            </li>
+
+            <li style="list-style-type: none;">
+              <textarea class="user-input" name="message[]" type="text" placeholder="say something..."></textarea>
+            </li>
+
+              <br>
+            <li style="list-style-type: none;">
+                <br>
+              <br>
+            </li>
+          </ul>
+         
+        
+          <br>
+            <input class="submit_bnt" type="submit" value="Send">
+        </form>
+
+</div>
+</section>
+
+
+<!--Footer
+----------------------------------------------------------------------------------------------------------------------------->
+
+    <footer>
+      <div class="content5">
+        <a href="https://www.facebook.com/connor.scoma.5"><h3>Facebook</h3></a>
+      </div>
+
+      <div class="content5">
+       <a href="https://github.com/ConnorScoma1"><h3>Github</h3></a>
+      </div>
+
+      <div class="content5">
+        <a href="https://www.linkedin.com/in/connor-scoma-92730331/"><h3>Linkedin</h3></a>
+      </div>
+
+      <div class="content5">
+        <a href="img/resume.pdf" download><h3>Resume</h3></a>
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2018 CONNOR SCOMA ALL RIGHTS RESERVED</p>
+
+      </div>
+
+
+
+    </footer>
+
+
+    <script src="js/typed.js"></script>
+    <script src="js/js.js"></script>
+  </body>
+</html>
